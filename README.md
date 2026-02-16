@@ -10,7 +10,15 @@
 
 ---
 
-###
+### Color
+
+- BG : #F0E8E2
+- Text : #271D15
+- Button : #4E4431 / Hover : #AC8A61
+- Border : #D2CAC4
+- Input : #F5F2EC
+
+---
 
 ### 기간
 

@@ -1,0 +1,7 @@
+@use "@/assets/scss/variables" as *;
+@use "./pages/menu";
+@use "./pages/home";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
