@@ -1,0 +1,56 @@
+@use "@/assets/scss/variables" as *;
+body.home-wrap {
+  section {
+    width: 100%;
+    &.gate-container {
+      height: 100vh;
+      background-image: url("/images/gate.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      div.blur-container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.3);
+        filter: blur(4px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      div.text-container {
+        background-color: unset;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1.main-title {
+          font-family: $font-title;
+          font-weight: $fw-bold;
+          font-size: 90px;
+          color: $color-bg;
+        }
+        h3.sub-title {
+          font-family: $font-sub-title;
+          font-weight: $fw-light;
+          font-style: italic;
+          font-size: 50px;
+          color: $color-bg;
+        }
+        p.scroll-effect {
+          position: absolute;
+          bottom: 0;
+          color: $color-bg;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

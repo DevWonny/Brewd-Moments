@@ -4,4 +4,15 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: $font-normal;
+  color: $color-text;
+}
+body {
+  background-color: $color-bg;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
 }
