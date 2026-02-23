@@ -5,7 +5,6 @@ body.home-wrap {
   gap: 100px;
   section {
     width: 100%;
-    background-color: $color-bg;
     &.gate-container {
       height: 100vh;
       background-image: url("/images/gate.jpg");
@@ -63,7 +62,7 @@ body.home-wrap {
     &.location-container {
       padding: 0 150px;
       // 임시로 영역 확인 위해서 height 지정
-      height: 100vh;
+      height: fit-content;
       width: 100%;
     }
 
@@ -116,6 +115,16 @@ body.home-wrap {
           height: 600px;
         }
       }
+    }
+
+    &.coffee-sky-container {
+      background-image: url("/images/sky_bg.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }
