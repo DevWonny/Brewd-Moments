@@ -2,6 +2,7 @@
 body.home-wrap {
   section {
     width: 100%;
+    background-color: $color-bg;
     &.gate-container {
       height: 100vh;
       background-image: url("/images/gate.jpg");
@@ -51,6 +52,14 @@ body.home-wrap {
           margin-bottom: 30px;
         }
       }
+    }
+
+    &.about-container,
+    &.coffe-sky-container,
+    &.signature-container,
+    &.location-container {
+      padding: 0 150px;
+      height: 100vh;
     }
   }
 }
