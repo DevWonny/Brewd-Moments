@@ -59,7 +59,56 @@ body.home-wrap {
     &.signature-container,
     &.location-container {
       padding: 0 150px;
+      // 임시로 영역 확인 위해서 height 지정
       height: 100vh;
+      width: 100%;
+    }
+
+    &.about-container {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-family: $font-sub-title;
+        font-weight: $fw-bold;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        position: relative;
+
+        &::after,
+        &::before {
+          content: "";
+          width: 40%;
+          height: 4px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border-left: unset;
+          border-right: unset;
+          border-top: 1px solid $color-border;
+          border-bottom: 1px solid $color-border;
+        }
+
+        &:after {
+          right: 0;
+        }
+        &::before {
+          left: 0;
+        }
+      }
+      div.about-contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        article.text-container {
+          p {
+          }
+        }
+        img {
+          width: 600px;
+          height: 600px;
+        }
+      }
     }
   }
 }
