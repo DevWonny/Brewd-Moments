@@ -1,5 +1,8 @@
 @use "@/assets/scss/variables" as *;
 body.home-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   section {
     width: 100%;
     background-color: $color-bg;
@@ -72,8 +75,9 @@ body.home-wrap {
         font-weight: $fw-bold;
         width: 100%;
         text-align: center;
-        font-size: 48px;
+        font-size: 64px;
         position: relative;
+        margin-bottom: 50px;
 
         &::after,
         &::before {
@@ -102,6 +106,9 @@ body.home-wrap {
         align-items: center;
         article.text-container {
           p {
+            width: 60%;
+            font-size: 48px;
+            line-height: 2;
           }
         }
         img {
