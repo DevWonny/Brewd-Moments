@@ -132,5 +132,58 @@ body.home-wrap {
         height: 40%;
       }
     }
+
+    &.signature-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      border: 1px solid black;
+      h3 {
+        font-family: $font-sub-title;
+        font-weight: $fw-bold;
+        width: 100%;
+        text-align: center;
+        font-size: 64px;
+        position: relative;
+        margin-bottom: 50px;
+        &::after,
+        &::before {
+          content: "";
+          width: 30%;
+          height: 4px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border-left: unset;
+          border-right: unset;
+          border-top: 1px solid $color-border;
+          border-bottom: 1px solid $color-border;
+        }
+
+        &:after {
+          right: 0;
+        }
+        &::before {
+          left: 0;
+        }
+      }
+
+      div.signature-contents {
+        display: flex;
+        gap: 30px;
+        article.signature-item {
+          flex: 1;
+          border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
   }
 }
